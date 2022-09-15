@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html>
 <!--Christopher Hernandez, Assignment 1, 9/13 -->
-    <header>
-        <title>Homework 1 Article </title>
-        <h1>Meta(FaceBook)&#8482; releases <i>Memlab</i>; A JavaScript Framework that Finds Memory Leaks
+<header>
+    <title>Homework 1 Article </title>
+    <h1 style="height: 50px; font-size: 30px ">Meta(FaceBook)<sup>&#8482;</sup> releases <em><i>MemLab</i></em>; A JavaScript Framework that Finds Memory Leaks
         </h1>
-        <h3>By Christopher Hernandez</h3>
-        <hr/>
-    </header>
+    <h5 style="height: .0004px">Christopher Hernandez</h5>
+    <hr style="background:black;height: 2px"/>
+</header>
+<section>
+    <article>
+        <p style="height: 80px">
+            While researching how to better optimize, measure, and control page load and interaction time, along with the size of JS code.
+            Previously they had systems to alerted them when problems arose both before and after code was in production.
+            They had never done much in terms of managing memory while in browser, but discovered Facebook's memory usage and memory crashes on the client side were rising.
+        </p>
         <section>
-            <article>
-                <p>While researching how to better optimize, measure, and control page load and interaction time, along with the size of JS code.
-                    Previously they had systems to alerted them when problems arose both before and after code was in production.
-                    They had never done much in terms of managing memory while in browser, but discovered Facebook's memory usage and memory crashes on the client side were rising.
-                </p>
-                <h3>Obviously, high memory usage would negatively affect parts of the user experience and website statistics such as</h3>
-                    <ul>
-                        <li> Load time</li>
-                        <li>Interaction length</li>
-                        <li>Number of active users</li>
-                        <li>Time spent on websites</li>
-                        <li>number of activities performed</li>
-                    </ul>
-
-
-            </article>
+            <h3 style="height: 25px">Obviously, high memory usage would negatively affect parts of the user experience and website statistics such as</h3>
+            <ul>
+                <li>Load time</li>
+                <li>Interaction length</li>
+                <li>Number of active users</li>
+                <li>Time spent on websites</li>
+                <li>number of activities performed</li>
+            </ul>
         </section>
 
+        <section>
+            <p>
+                <!--this anchor tag would link to the bottom of the page if the page required scrolling -->
+                As described in the article <a href="#footer"> below</a>, MemLab helps find the source of these memory leaks by essentially running a "headless" browser through scenarios and analyzing JavaScript "heap" snapshots which I do not understand.
+            </p>
+        </section>
+    </article>
+</section>
 
-<footer>
-
-</footer>
+<footer id="footer">
+       <a href="https://engineering.fb.com/2022/09/12/open-source/memlab/" target="blank">https://engineering.fb.com/2022/09/12/open-source/memlab/</a>
+    </footer>
 </html>
